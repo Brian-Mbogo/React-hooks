@@ -30,9 +30,9 @@ Every movie in the app uses these attributes:
 ## Run locally
 
 1. Install dependencies:
-   - `npm install`
+   - `npm install` (if PowerShell blocks `npm`, use `npm.cmd install`)
 2. Start the dev server:
-   - `npm start`
+   - `npm start` (or `npm.cmd start`)
 
 Then open the URL shown in your terminal (usually `http://localhost:3000`).
 
@@ -50,5 +50,5 @@ src/
     MovieList.js
 public/
   index.html
+  poster-placeholder.jpg
 ```
-
