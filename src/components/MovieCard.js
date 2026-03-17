@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const DEFAULT_POSTER = '/poster-placeholder.jpg';
 
-function MovieCard({ movie }) {
+function MovieCard({ movie, to }) {
   const { title, description, posterURL, rating } = movie;
 
-  return (
-    <article className="movie-card">
+  const content = (
+    <>
       <img
         className="movie-card__poster"
         src={posterURL || DEFAULT_POSTER}
@@ -20,12 +21,27 @@ function MovieCard({ movie }) {
       <div className="movie-card__body">
         <div className="movie-card__header">
           <h3 className="movie-card__title">{title}</h3>
-          <span className="movie-card__rating">⭐ {Number(rating).toFixed(1)}</span>
+          <span className="movie-card__rating">
+            ⭐ {Number(rating).toFixed(1)}
+          </span>
         </div>
         <p className="movie-card__description">{description}</p>
       </div>
+    </>
+  );
+
+  return (
+    <article className="movie-card">
+      {to ? (
+        <Link className="movie-card__link" to={to} aria-label={title}>
+          {content}
+        </Link>
+      ) : (
+        content
+      )}
     </article>
   );
 }
 
 export default MovieCard;
+

@@ -9,11 +9,14 @@ function MovieList({ movies }) {
   return (
     <section className="movie-list">
       {movies.map((movie) => (
-        <MovieCard key={movie.id ?? movie.title} movie={movie} />
+        <MovieCard
+          key={movie.id ?? movie.title}
+          movie={movie}
+          to={`/movie/${movie.id}`}
+        />
       ))}
     </section>
   );
 }
 
 export default MovieList;
-
