@@ -51,4 +51,8 @@ src/
 public/
   index.html
   poster-placeholder.jpg
+  posters/
+    inception.jpg
+    dark-knight.jpg
+    interstellar.jpg
 ```

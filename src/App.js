@@ -9,8 +9,7 @@ const initialMovies = [
     title: 'Inception',
     description:
       'A thief who steals corporate secrets through dream-sharing technology is given an inverse task.',
-    posterURL:
-      'https://m.media-amazon.com/images/I/51s+V3QfZkL._AC_.jpg',
+    posterURL: '/posters/inception.jpg',
     rating: 4.8,
   },
   {
@@ -18,8 +17,7 @@ const initialMovies = [
     title: 'The Dark Knight',
     description:
       'Batman faces the Joker, a criminal mastermind who wants to plunge Gotham into anarchy.',
-    posterURL:
-      'https://m.media-amazon.com/images/I/51k0qa9NTaL._AC_.jpg',
+    posterURL: '/posters/dark-knight.jpg',
     rating: 4.9,
   },
   {
@@ -27,8 +25,7 @@ const initialMovies = [
     title: 'Interstellar',
     description:
       'A team travels through a wormhole in space in an attempt to ensure humanity’s survival.',
-    posterURL:
-      'https://m.media-amazon.com/images/I/71n58lJmR2L._AC_SL1111_.jpg',
+    posterURL: '/posters/interstellar.jpg',
     rating: 4.7,
   },
 ];
